@@ -26,5 +26,6 @@ steps:
     backupLabel: '001'
     isAzureBackup: false
     waitForCompletion: true
-    npm run build
-  displayName: 'npm install and build'
+    npm run build 
+    ]
+
