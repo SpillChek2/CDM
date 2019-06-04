@@ -17,5 +17,14 @@ steps:
 
 - script: |
     npm install
+- task: MSCRMBackupOnlineInstance@10
+  inputs:
+    apiUrl: 'https://admin.services.crm[n].dynamics.com'
+    username: 'barbaraackles'
+    Password: 'Muriel2john'
+    instanceName: 'cwms'
+    backupLabel: '001'
+    isAzureBackup: false
+    waitForCompletion: true
     npm run build
   displayName: 'npm install and build'
